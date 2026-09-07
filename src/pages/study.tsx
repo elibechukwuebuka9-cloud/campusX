@@ -1,4 +1,4 @@
-import "./study.css";
+import "./Study.css";
 import { Link } from "react-router-dom";
 
 function Study() {
