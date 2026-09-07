@@ -1,0 +1,109 @@
+.provider-login-page {
+  min-height: 100vh;
+  background: #050505;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+}
+
+.provider-login-card {
+  width: 100%;
+  max-width: 450px;
+  background: #111;
+  border: 1px solid #242424;
+  border-radius: 18px;
+  padding: 40px;
+}
+
+.provider-logo {
+  font-size: 14px;
+  letter-spacing: 3px;
+  color: #999;
+  margin-bottom: 25px;
+}
+
+.provider-login-card h1 {
+  margin: 0 0 10px;
+  font-size: 32px;
+}
+
+.provider-subtitle {
+  color: #888;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+.provider-input-group {
+  margin-bottom: 20px;
+}
+
+.provider-input-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.provider-input-group input {
+  width: 100%;
+  box-sizing: border-box;
+  background: #080808;
+  color: white;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 13px;
+  font-size: 15px;
+  outline: none;
+}
+
+.provider-input-group input:focus {
+  border-color: white;
+}
+
+.provider-login-button {
+  width: 100%;
+  background: white;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  padding: 14px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.provider-login-button:hover {
+  opacity: 0.85;
+}
+
+.provider-demo {
+  margin-top: 25px;
+  padding: 15px;
+  background: #181818;
+  border-radius: 8px;
+  font-size: 13px;
+}
+
+.provider-demo p {
+  color: #888;
+  margin: 0 0 8px;
+}
+
+.provider-demo span {
+  display: block;
+  color: #ddd;
+  margin-top: 4px;
+}
+
+@media (max-width: 500px) {
+  .provider-login-card {
+    padding: 28px 20px;
+  }
+
+  .provider-login-card h1 {
+    font-size: 28px;
+  }
+}

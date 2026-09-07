@@ -1,0 +1,436 @@
+/* =========================================
+   CAMPUSX - ACCOMMODATION DETAILS
+   ========================================= */
+
+.accommodation-details-page {
+  min-height: 100vh;
+  background: #050505;
+  color: #fff;
+  padding: 100px 5% 60px;
+}
+
+/* BACK BUTTON */
+.back-button {
+  display: inline-block;
+  margin-bottom: 25px;
+  color: #aaa;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.back-button:hover {
+  color: #fff;
+}
+
+/* MAIN DETAILS */
+.details-container {
+  max-width: 1150px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+
+  background: #101010;
+  border: 1px solid #292929;
+  border-radius: 14px;
+
+  overflow: hidden;
+}
+
+/* IMAGE */
+.details-image-section {
+  min-height: 500px;
+}
+
+.details-image {
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+
+  object-fit: cover;
+  display: block;
+}
+
+/* INFORMATION */
+.details-info {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.details-badges {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+
+/* IMPORTANT:
+   Badges are normal on details page */
+.details-badges .room-badge,
+.details-badges .campus-badge {
+  position: static;
+
+  display: inline-block;
+
+  padding: 6px 10px;
+
+  border-radius: 5px;
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.details-badges .room-badge {
+  background: #050505;
+  border: 1px solid #444;
+  color: #fff;
+}
+
+.details-badges .campus-badge {
+  background: #fff;
+  color: #000;
+}
+
+.details-badges .off-campus {
+  background: #242424;
+  color: #fff;
+}
+
+/* TITLE */
+.details-info h1 {
+  margin: 0 0 10px;
+
+  font-size: 36px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+/* LOCATION */
+.details-location {
+  margin: 0 0 5px;
+  color: #ddd;
+  font-size: 15px;
+}
+
+.details-distance {
+  margin: 0 0 20px;
+  color: #888;
+  font-size: 13px;
+}
+
+/* PRICE */
+.details-price {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+
+  border-bottom: 1px solid #292929;
+}
+
+.details-price strong {
+  font-size: 30px;
+}
+
+.details-price span {
+  color: #888;
+  font-size: 13px;
+}
+
+/* DESCRIPTION */
+.details-description {
+  color: #bdbdbd;
+  font-size: 14px;
+  line-height: 1.7;
+
+  margin: 0 0 25px;
+}
+
+/* FEATURES */
+.details-features {
+  margin-bottom: 28px;
+}
+
+.details-features h2 {
+  font-size: 18px;
+  margin: 0 0 12px;
+}
+
+.details-features .feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.details-features .feature-list span {
+  position: static;
+
+  padding: 7px 10px;
+
+  background: #191919;
+  border: 1px solid #333;
+  border-radius: 5px;
+
+  color: #ccc;
+  font-size: 12px;
+}
+
+/* BUTTONS */
+.details-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.contact-button,
+.request-button {
+  min-height: 44px;
+  padding: 0 17px;
+
+  border-radius: 6px;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.contact-button {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #444;
+}
+
+.contact-button:hover {
+  background: #1c1c1c;
+}
+
+.request-button {
+  background: #fff;
+  color: #000;
+  border: 1px solid #fff;
+}
+
+.request-button:hover {
+  background: #ddd;
+}
+
+/* =========================================
+   FORM
+   ========================================= */
+
+.accommodation-form-container {
+  max-width: 650px;
+  margin: 30px auto 0;
+}
+
+.accommodation-form-card {
+  position: relative;
+
+  background: #101010;
+
+  border: 1px solid #292929;
+  border-radius: 12px;
+
+  padding: 30px;
+}
+
+.accommodation-form-card h2 {
+  margin: 0 0 7px;
+  font-size: 24px;
+}
+
+.accommodation-form-card > p {
+  margin: 0 0 22px;
+  color: #999;
+  font-size: 14px;
+}
+
+/* CLOSE */
+.close-form {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+
+  width: 32px;
+  height: 32px;
+
+  border-radius: 50%;
+  border: 1px solid #333;
+
+  background: #181818;
+  color: #fff;
+
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* FORM INPUTS */
+.accommodation-form-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.accommodation-form-card input,
+.accommodation-form-card textarea {
+  width: 100%;
+
+  background: #080808;
+  color: #fff;
+
+  border: 1px solid #333;
+  border-radius: 6px;
+
+  padding: 13px;
+
+  font-family: inherit;
+  font-size: 14px;
+
+  outline: none;
+}
+
+.accommodation-form-card input {
+  height: 46px;
+}
+
+.accommodation-form-card textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.accommodation-form-card input:focus,
+.accommodation-form-card textarea:focus {
+  border-color: #666;
+}
+
+.accommodation-form-card input::placeholder,
+.accommodation-form-card textarea::placeholder {
+  color: #666;
+}
+
+/* SUCCESS */
+.success-message {
+  text-align: center;
+
+  padding: 25px;
+
+  background: #0a0a0a;
+  border: 1px solid #292929;
+  border-radius: 8px;
+}
+
+.success-message h3 {
+  margin: 0 0 8px;
+  font-size: 21px;
+}
+
+.success-message p {
+  margin: 0 0 18px;
+  color: #aaa;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* NOT FOUND */
+.details-not-found {
+  max-width: 600px;
+  margin: 60px auto;
+
+  padding: 50px 25px;
+
+  text-align: center;
+
+  background: #101010;
+  border: 1px solid #292929;
+  border-radius: 12px;
+}
+
+.details-not-found h1 {
+  margin-bottom: 10px;
+}
+
+.details-not-found p {
+  color: #999;
+  margin-bottom: 25px;
+}
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 900px) {
+  .details-container {
+    grid-template-columns: 1fr;
+  }
+
+  .details-image-section {
+    min-height: 350px;
+  }
+
+  .details-image {
+    min-height: 350px;
+    max-height: 450px;
+  }
+
+  .details-info {
+    padding: 30px;
+  }
+}
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+  .accommodation-details-page {
+    padding: 85px 16px 40px;
+  }
+
+  .details-container {
+    border-radius: 10px;
+  }
+
+  .details-image-section {
+    min-height: 230px;
+  }
+
+  .details-image {
+    min-height: 230px;
+    max-height: 280px;
+  }
+
+  .details-info {
+    padding: 23px 20px 25px;
+  }
+
+  .details-info h1 {
+    font-size: 28px;
+  }
+
+  .details-price strong {
+    font-size: 27px;
+  }
+
+  .details-description {
+    font-size: 13px;
+  }
+
+  .details-actions {
+    flex-direction: column;
+  }
+
+  .contact-button,
+  .request-button {
+    width: 100%;
+  }
+
+  .accommodation-form-card {
+    padding: 25px 18px;
+  }
+}

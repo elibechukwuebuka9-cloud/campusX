@@ -1,0 +1,242 @@
+/* =========================================
+   CAMPUSX - NOTIFICATIONS
+   ========================================= */
+
+.notifications-page {
+  min-height: 100vh;
+  background: #050505;
+  color: #ffffff;
+
+  padding: 110px 6% 60px;
+}
+
+/* HEADER */
+
+.notifications-header {
+  max-width: 900px;
+  margin: 0 auto 30px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  gap: 20px;
+}
+
+.notifications-header h1 {
+  margin: 0 0 8px;
+
+  font-size: 36px;
+}
+
+.notifications-header p {
+  margin: 0;
+
+  color: #999999;
+
+  font-size: 15px;
+}
+
+.unread-count {
+  padding: 7px 12px;
+
+  background: #ffffff;
+  color: #000000;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* LIST */
+
+.notifications-list {
+  max-width: 900px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+/* CARD */
+
+.notification-card {
+  display: flex;
+
+  gap: 15px;
+
+  padding: 20px;
+
+  background: #111111;
+
+  border: 1px solid #292929;
+  border-radius: 10px;
+
+  cursor: pointer;
+
+  transition: 0.2s ease;
+}
+
+.notification-card:hover {
+  border-color: #444444;
+  transform: translateY(-1px);
+}
+
+.notification-card.unread {
+  border-color: #555555;
+  background: #151515;
+}
+
+/* ICON */
+
+.notification-icon {
+  width: 45px;
+  height: 45px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #1d1d1d;
+
+  border-radius: 50%;
+
+  font-size: 20px;
+}
+
+/* CONTENT */
+
+.notification-content {
+  flex: 1;
+}
+
+.notification-title-row {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  margin-bottom: 7px;
+}
+
+.notification-title-row h2 {
+  margin: 0;
+
+  font-size: 17px;
+}
+
+.notification-content p {
+  margin: 0 0 10px;
+
+  color: #bdbdbd;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+/* NEW BADGE */
+
+.new-badge {
+  padding: 3px 7px;
+
+  background: #ffffff;
+  color: #000000;
+
+  border-radius: 4px;
+
+  font-size: 9px;
+  font-weight: 800;
+}
+
+/* DATE */
+
+.notification-date {
+  color: #777777;
+
+  font-size: 11px;
+}
+
+/* EMPTY */
+
+.notifications-empty {
+  max-width: 600px;
+
+  margin: 60px auto;
+
+  padding: 50px 25px;
+
+  text-align: center;
+
+  background: #111111;
+
+  border: 1px solid #292929;
+
+  border-radius: 12px;
+}
+
+.empty-icon {
+  font-size: 40px;
+
+  margin-bottom: 15px;
+}
+
+.notifications-empty h2 {
+  margin: 0 0 10px;
+
+  font-size: 22px;
+}
+
+.notifications-empty p {
+  margin: 0;
+
+  color: #888888;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+  .notifications-page {
+    padding: 90px 18px 40px;
+  }
+
+  .notifications-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .notifications-header h1 {
+    font-size: 30px;
+  }
+
+  .notification-card {
+    padding: 16px;
+  }
+
+  .notification-icon {
+    width: 40px;
+    height: 40px;
+
+    font-size: 18px;
+  }
+
+  .notification-title-row {
+    align-items: flex-start;
+    flex-direction: column;
+
+    gap: 5px;
+  }
+
+  .notification-title-row h2 {
+    font-size: 16px;
+  }
+}

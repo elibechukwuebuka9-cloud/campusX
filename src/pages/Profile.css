@@ -1,0 +1,164 @@
+.profile-page {
+  min-height: 100vh;
+  padding: 50px 7%;
+  background: #07152f;
+  color: white;
+}
+
+.profile-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 35px;
+}
+
+.profile-avatar {
+  width: 75px;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #f5a623;
+  color: #07152f;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.profile-header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.profile-header p {
+  color: #aebbd5;
+}
+
+.profile-card,
+.account-card {
+  background: #102653;
+  border: 1px solid #274475;
+  border-radius: 16px;
+  padding: 30px;
+  margin-bottom: 25px;
+}
+
+.profile-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.profile-card h2,
+.account-card h2 {
+  margin: 0 0 8px;
+}
+
+.profile-card-header p,
+.account-card p {
+  color: #aebbd5;
+  margin: 0;
+}
+
+.edit-button,
+.save-button,
+.logout-button {
+  border: none;
+  border-radius: 8px;
+  padding: 12px 18px;
+  background: #f5a623;
+  color: #07152f;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.profile-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 22px;
+}
+
+.profile-field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.profile-field label {
+  color: #aebbd5;
+  font-size: 14px;
+}
+
+.profile-value,
+.profile-field input {
+  padding: 14px;
+  border-radius: 8px;
+  background: #172f5c;
+  border: 1px solid #315080;
+  color: white;
+  box-sizing: border-box;
+}
+
+.profile-field input {
+  width: 100%;
+  outline: none;
+}
+
+.profile-field input:focus {
+  border-color: #f5a623;
+}
+
+.profile-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.cancel-button {
+  padding: 12px 18px;
+  border: 1px solid #405a82;
+  border-radius: 8px;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+.profile-message {
+  color: #f5a623;
+  margin-top: 20px;
+}
+
+.logout-button {
+  margin-top: 20px;
+}
+
+.back-button {
+  border: none;
+  background: transparent;
+  color: #f5a623;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width: 650px) {
+  .profile-page {
+    padding: 35px 5%;
+  }
+
+  .profile-card-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .profile-form {
+    grid-template-columns: 1fr;
+  }
+}

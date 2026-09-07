@@ -1,0 +1,139 @@
+.community-page {
+  min-height: 100vh;
+  background: #08090d;
+  color: white;
+  padding: 80px 7%;
+  font-family: Arial, sans-serif;
+}
+
+.community-container {
+  max-width: 850px;
+  margin: auto;
+}
+
+.community-header p {
+  color: #d6a84f;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.community-header h1 {
+  font-size: 60px;
+  line-height: 1;
+  letter-spacing: -3px;
+  margin: 15px 0;
+}
+
+.community-header h1 span {
+  color: #d6a84f;
+}
+
+.community-header > span {
+  color: #858892;
+  font-size: 17px;
+}
+
+.post-box {
+  margin-top: 45px;
+  padding: 20px;
+  background: #101218;
+  border: 1px solid #252831;
+  border-radius: 14px;
+}
+
+.post-box textarea {
+  width: 100%;
+  min-height: 100px;
+  box-sizing: border-box;
+  padding: 15px;
+  border: 1px solid #30333d;
+  border-radius: 8px;
+  outline: none;
+  resize: vertical;
+  background: #181a21;
+  color: white;
+  font-family: inherit;
+}
+
+.post-box textarea:focus {
+  border-color: #d6a84f;
+}
+
+.post-box button {
+  margin-top: 12px;
+  padding: 11px 25px;
+  border: none;
+  border-radius: 7px;
+  background: #d6a84f;
+  color: #08090d;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.feed {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.post-card {
+  padding: 25px;
+  background: #101218;
+  border: 1px solid #252831;
+  border-radius: 14px;
+}
+
+.post-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #d6a84f;
+  color: #08090d;
+  font-weight: bold;
+}
+
+.post-top h3 {
+  margin: 0;
+}
+
+.post-top small {
+  color: #858892;
+}
+
+.post-text {
+  margin: 22px 0;
+  color: #d2d4da;
+  line-height: 1.6;
+}
+
+.like-button {
+  border: none;
+  background: transparent;
+  color: #858892;
+  cursor: pointer;
+}
+
+.like-button:hover {
+  color: #d6a84f;
+}
+
+@media (max-width: 650px) {
+  .community-page {
+    padding: 50px 5%;
+  }
+
+  .community-header h1 {
+    font-size: 45px;
+  }
+}

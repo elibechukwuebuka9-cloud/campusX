@@ -1,0 +1,137 @@
+.gpa-page {
+  min-height: 100vh;
+  background: #08090d;
+  color: white;
+  padding: 80px 7%;
+  font-family: Arial, sans-serif;
+}
+
+.gpa-container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.gpa-header p {
+  color: #d6a84f;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.gpa-header h1 {
+  font-size: 55px;
+  margin: 15px 0;
+}
+
+.gpa-header span {
+  color: #858892;
+  font-size: 17px;
+}
+
+.gpa-card {
+  margin-top: 50px;
+  padding: 30px;
+  background: #101218;
+  border: 1px solid #292c35;
+  border-radius: 16px;
+}
+
+.table-header,
+.course-row {
+  display: grid;
+  grid-template-columns: 2fr 1fr 100px;
+  gap: 15px;
+  align-items: center;
+}
+
+.table-header {
+  color: #777b85;
+  font-size: 11px;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.course-row {
+  margin-bottom: 12px;
+}
+
+.course-row input,
+.course-row select {
+  width: 100%;
+  height: 48px;
+  padding: 0 14px;
+  border: 1px solid #30333d;
+  border-radius: 7px;
+  outline: none;
+  background: #181a21;
+  color: white;
+}
+
+.course-row input:focus,
+.course-row select:focus {
+  border-color: #d6a84f;
+}
+
+.add-course {
+  margin-top: 15px;
+  padding: 12px 18px;
+  border: 1px solid #3a3d46;
+  border-radius: 7px;
+  background: transparent;
+  color: #d6a84f;
+  cursor: pointer;
+}
+
+.gpa-result {
+  margin-top: 35px;
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #171920;
+  border-radius: 12px;
+}
+
+.gpa-result span {
+  color: #858892;
+}
+
+.gpa-result h2 {
+  margin: 8px 0 0;
+  font-size: 48px;
+  color: #d6a84f;
+}
+
+.gpa-scale {
+  padding: 10px 15px;
+  border: 1px solid #30333d;
+  border-radius: 20px;
+}
+
+@media (max-width: 650px) {
+  .gpa-page {
+    padding: 50px 5%;
+  }
+
+  .gpa-header h1 {
+    font-size: 42px;
+  }
+
+  .gpa-card {
+    padding: 18px;
+  }
+
+  .table-header {
+    display: none;
+  }
+
+  .course-row {
+    grid-template-columns: 1fr;
+  }
+
+  .gpa-result {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
