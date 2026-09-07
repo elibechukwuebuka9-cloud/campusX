@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./Community.css";
+import "./community.css";
 
 type Post = {
   name: string;
